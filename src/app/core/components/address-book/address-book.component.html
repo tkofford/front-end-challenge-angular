@@ -1,0 +1,12 @@
+<div style="padding: 12px;">
+    <mat-card *ngFor="let person of addressbook" style="margin-top:10px;">
+        <mat-card-content>
+            <h2>{{person.name}}</h2>
+            <p><b>Address</b>&nbsp;&nbsp;&nbsp;{{person.streetAddress}}<br></p>
+            <p><b>City</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{person.city}}</p>
+            <p><b>State</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{person.state}}</p>
+            <p><b>Zip Code</b>&nbsp;&nbsp;&nbsp;{{person.zipCode}}</p>
+            <p><b>Phone</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{person.phone}}</p>
+        </mat-card-content>
+    </mat-card>
+</div>

@@ -8,10 +8,12 @@ import { AppProgressSpinnerComponent } from './core/components/app-progress-spin
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
+import { AddressBookComponent } from './core/components/address-book/address-book.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    AddressBookComponent,
   ],
   imports: [
     BrowserModule,

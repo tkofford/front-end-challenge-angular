@@ -3,13 +3,10 @@ import { HomeLayoutComponent } from './home-layout.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
-import { FolderComponent } from '../../../../../../../connectiverx/Wrapper/src/app/core/components/folder/folder.component';
-import { MatIcon, MatIconModule } from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { AppComponent } from 'src/app/app.component';
 import { Component } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { UserMenuComponent } from '../../../../../../../connectiverx/Wrapper/src/app/core/components/user-menu/user-menu.component';
-import { of } from 'rxjs';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 describe('HomeLayoutComponent', () => {
@@ -31,10 +28,8 @@ describe('HomeLayoutComponent', () => {
       ],
       declarations: [
         HomeLayoutComponent,
-        FolderComponent,
         AppComponent,
         ProgressSpinnerStubComponent,
-        UserMenuComponent,
       ],
     }).compileComponents();
   }));
